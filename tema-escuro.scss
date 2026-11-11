@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+// Paleta escura: azul-noite, creme e verde-claro
+$fundo: #0f1b2b;
+$fundo-cartao: #182739;
+$texto: #f1ebdf;
+$acento: #8cc7a9;
+$acento-claro: #b5e0c8;
+
+$body-bg: $fundo;
+$body-color: $texto;
+$primary: $texto;
+$secondary: $acento;
+$link-color: $acento;
+$link-hover-color: $acento-claro;
+$navbar-bg: $fundo;
+$navbar-fg: $acento;
+$navbar-hl: $acento-claro;
+$navbar-brand-color: $texto;
+$footer-bg: $fundo;
+$footer-fg: $texto;
+
+/*-- scss:rules --*/
+:root { --fundo-cartao: #{$fundo-cartao}; --acento: #{$acento}; --acento-claro: #{$acento-claro}; }

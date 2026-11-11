@@ -1,0 +1,60 @@
+---
+title: "Ulisses Levy Silvério dos Reis"
+subtitle: "Professor da Universidade Federal Rural do Semi-Árido (UFERSA)"
+image: imagens/ulisses.png
+image-alt: "Foto de Ulisses Levy Silvério dos Reis, de terno azul-marinho e gravata verde"
+page-layout: full
+about:
+  template: solana
+  id: inicio
+  image-shape: round
+  image-width: 22em
+  links:
+    - text: '<i class="bi bi-envelope"></i>'
+      href: "mailto:ulisseslreis@gmail.com"
+      aria-label: E-mail
+    - text: '<i class="ai ai-lattes"></i>'
+      href: https://lattes.cnpq.br/5041818002534490
+      aria-label: Lattes
+    - text: '<i class="ai ai-orcid"></i>'
+      href: https://orcid.org/0000-0003-1476-416X
+      aria-label: ORCID
+    - text: '<i class="ai ai-google-scholar"></i>'
+      href: https://scholar.google.com/citations?user=6zJErcYAAAAJ&hl=pt-BR
+      aria-label: Google Scholar
+    - text: '<i class="ai ai-researchgate"></i>'
+      href: https://www.researchgate.net/profile/Ulisses-Reis-2
+      aria-label: ResearchGate
+    - text: '<i class="ai ai-academia"></i>'
+      href: https://ufersa.academia.edu/UlissesReis
+      aria-label: Academia.edu
+    - icon: github
+      href: https://github.com/ulisseslsreis
+      aria-label: GitHub
+    - icon: linkedin
+      href: https://www.linkedin.com/in/ulisses-reis-797919247/
+      aria-label: LinkedIn
+    - icon: substack
+      href: https://substack.com/@ulissesreis
+      aria-label: Substack
+    - icon: instagram
+      href: https://www.instagram.com/ulisseslsreis/
+      aria-label: Instagram
+    - icon: twitter-x
+      href: https://x.com/ulisseslsreis
+      aria-label: X
+    - icon: threads
+      href: https://www.threads.com/@ulisseslsreis
+      aria-label: Threads
+    - icon: bluesky
+      href: https://bsky.app/profile/ulissesreis.bsky.social
+      aria-label: Bluesky
+---
+
+::: {#inicio}
+
+Sou professor da UFERSA, onde leciono na graduação em Direito e no Programa de Pós-Graduação em Direito. Pesquiso direito constitucional com métodos empíricos, para entender como Direito e Política se relacionam. Uso métodos descritivos e inferenciais, com abordagens de *text as data*. O meu foco principal de investigação é o Supremo Tribunal Federal.
+
+Aqui reúno minhas pesquisas, projetos de dados, apresentações e materiais de ensino.
+
+:::
