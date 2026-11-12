@@ -1,0 +1,17 @@
+<div class="cartoes">
+<% for (const item of items) { %>
+<article class="cartao" <%= metadataAttrs(item) %>>
+<a class="miniatura" href="<%- item.path %>" tabindex="-1" aria-hidden="true"><img src="<%- item.image %>" alt="<%= item['image-alt'] %>" loading="lazy"></a>
+<div class="cartao-texto">
+<p class="cartao-meta"><%= item.date %> · <%= item.evento %></p>
+<h2><a href="<%- item.path %>"><%= item.title %></a></h2>
+<p class="cartao-sub"><%= item.subtitle %></p>
+<p><%= item.description %></p>
+<div class="cartao-acoes">
+<a class="botao" href="<%- item.path %>"><span aria-hidden="true">▶</span> Abrir slides</a>
+<a class="botao discreto" href="<%- item.repo %>"><i class="bi bi-github" aria-hidden="true"></i> Código</a>
+</div>
+</div>
+</article>
+<% } %>
+</div>

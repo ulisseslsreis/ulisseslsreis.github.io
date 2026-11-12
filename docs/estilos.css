@@ -67,6 +67,8 @@ body {
   background-size: 100% 4px;
   color: var(--texto);
   font: 300 1rem/1.7 "Spline Sans", system-ui, sans-serif;
+  /* A Spline Sans tem espaço entre palavras estreito; abre um pouco no texto corrido */
+  word-spacing: .1em;
   margin: 0;
   transition: background-color .3s, color .3s;
 }
@@ -192,3 +194,39 @@ a:hover { color: var(--acento); }
   .ativo .cur, .dialogo .seta { animation: none; }
   .cur { transition: none; }
 }
+
+/* ---- Aba Apresentações: cartões lidos de apresentacoes.yml ---- */
+.cartoes { display: grid; gap: 1rem; margin-top: 1.4rem; }
+.cartao {
+  display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 1.25rem; align-items: start;
+  border: 1px solid var(--borda); border-radius: 4px; padding: 1rem;
+  transition: border-color .2s, background-color .2s;
+}
+.cartao:hover { border-color: var(--acento); background: var(--realce); }
+.miniatura img {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;
+  border: 1px solid var(--borda); border-radius: 3px; filter: var(--foto-filtro);
+}
+.cartao-texto p { margin: 0 0 .6rem; }
+.cartao-meta { font: 400 .72rem "Spline Sans Mono", monospace; color: var(--suave); }
+.cartao h2 { font: 500 1.15rem/1.3 "Spline Sans", sans-serif; margin: 0 0 .15rem; border: 0; padding: 0; }
+.cartao h2 a { text-decoration: none; color: var(--texto); }
+.cartao h2 a:hover { color: var(--acento); }
+.cartao-sub { font-style: italic; color: var(--suave); }
+.cartao-acoes { margin-top: .9rem; }
+.cartao-acoes, .cartao-acoes > p { display: flex; flex-wrap: wrap; gap: .6rem; }
+.cartao-acoes > p { margin: 0; }
+.botao {
+  display: inline-flex; align-items: center; gap: .45rem; text-decoration: none;
+  font: 500 .74rem "Spline Sans Mono", monospace; letter-spacing: .06em; text-transform: uppercase;
+  border: 1px solid var(--acento); color: var(--acento); border-radius: 4px; padding: .4rem .7rem;
+}
+.botao:hover { background: var(--acento); color: var(--painel); }
+.botao.discreto { border-color: var(--borda); color: var(--texto); }
+.botao.discreto:hover { border-color: var(--acento); background: none; color: var(--acento); }
+@media (max-width: 760px) {
+  .cartao { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Rótulos em fonte monoespaçada mantêm o espaço normal */
+.menu, .tema, .atributos, .rodape, .cartao-meta, .botao { word-spacing: normal; }

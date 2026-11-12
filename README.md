@@ -13,7 +13,7 @@ O site reúne pesquisas, projetos de dados, apresentações e materiais de ensin
 - **Início**: apresentação, foto e links para perfis acadêmicos e redes sociais
 - **Pesquisa**: artigos, livros e projetos de pesquisa (em construção)
 - **Projetos**: bases de dados, scripts e aplicativos, como o [Atlas Constitucional](https://github.com/ulisseslsreis/atlas_constitucional_2026) (em construção)
-- **Apresentações**: slides de palestras, cursos e eventos (em construção)
+- **Apresentações**: slides de minicursos e palestras, em cartões com miniatura, descrição e links para os slides e o código
 - **Ensino**: disciplinas e materiais didáticos (em construção)
 
 ## Atualizações
@@ -28,6 +28,8 @@ git push
 ```
 
 O GitHub Pages publica automaticamente o conteúdo da pasta `docs/` do ramo `main`.
+
+Para incluir uma apresentação, acrescente um bloco em `apresentacoes.yml` (título, subtítulo, data, evento, descrição, miniatura e links) e salve a captura de um slide em `imagens/apresentacoes/`, com 960 px de largura.
 
 ## Visual
 
@@ -53,14 +55,17 @@ site_pessoal/
 ├── index.qmd             # Página inicial (ficha e apresentação)
 ├── pesquisa.qmd          # Seção Pesquisa
 ├── projetos.qmd          # Seção Projetos
-├── apresentacoes.qmd     # Seção Apresentações
+├── apresentacoes.qmd     # Seção Apresentações (listagem)
+├── apresentacoes.yml     # Dados dos cartões de apresentações
 ├── ensino.qmd            # Seção Ensino
 ├── estilos.css           # Cores dos temas claro e escuro, tipografia e layout
 ├── parciais/
 │   ├── cabecalho.html    # Fontes, ícones e aplicação do tema salvo
 │   ├── menu.html         # Painel de menu com os ícones de cada seção
-│   └── rodape.html       # Rodapé e scripts do menu e da troca de tema
+│   ├── rodape.html       # Rodapé e scripts do menu e da troca de tema
+│   └── apresentacoes.ejs # Modelo dos cartões de apresentações
 ├── imagens/              # Foto e demais imagens
+│   └── apresentacoes/    # Miniaturas dos slides
 └── docs/                 # Site renderizado, publicado pelo GitHub Pages
 ```
 

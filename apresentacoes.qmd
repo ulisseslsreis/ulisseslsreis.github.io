@@ -1,11 +1,21 @@
 ---
 pagetitle: "Apresentações · Ulisses Reis"
+listing:
+  id: lista-apresentacoes
+  contents: apresentacoes.yml
+  template: parciais/apresentacoes.ejs
+  sort: "date desc"
+  date-format: "DD/MM/YYYY"
+  fields: [title, subtitle, date, evento, description, image, image-alt, path, repo]
 ---
 
-::: {.painel .pagina}
+::::: {.painel .pagina}
 
 # Apresentações
 
-Em construção.
+Slides de minicursos e palestras, feitos em Quarto e abertos para consulta. Cada um tem o código no GitHub.
 
+::: {#lista-apresentacoes}
 :::
+
+:::::

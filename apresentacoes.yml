@@ -1,0 +1,33 @@
+# Apresentações exibidas na aba Apresentações.
+# Para incluir uma nova, copie um bloco e ajuste os campos.
+# A miniatura fica em imagens/apresentacoes/ (captura de um slide, 960 px de largura).
+
+- title: "IA Generativa na Pesquisa Jurídica"
+  subtitle: "Fundamentos, aplicações e limites metodológicos"
+  date: 2026-05-05
+  evento: "Minicurso · graduação e PPGD · UFERSA"
+  description: "Como funcionam os modelos de linguagem e onde eles ajudam na pesquisa jurídica. Mostra aplicações na escrita, na revisão de literatura e na coleta de dados, com atenção a alucinação, viés e autoria."
+  image: imagens/apresentacoes/gen_ai_pesquisa_juridica.jpg
+  image-alt: "Slide com captura de tela do ChatGPT respondendo sobre a ADPF 54"
+  path: https://ulisseslsreis.github.io/apresentacao_gen_ai_pesquisa_juridica/
+  repo: https://github.com/ulisseslsreis/apresentacao_gen_ai_pesquisa_juridica
+
+- title: "Gerenciadores de Referências"
+  subtitle: "Poupando tempo útil para gastar com o que importa"
+  date: 2026-05-01
+  evento: "Minicurso · graduação e PPGD · UFERSA"
+  description: "Por que usar um gerenciador de referências e como tirar proveito do Zotero. Cobre captura, organização da biblioteca, anotação, citação no Word com estilo ABNT e trabalho em grupo."
+  image: imagens/apresentacoes/gerenciadores_referencias.jpg
+  image-alt: "Slide com tabela comparando Zotero, Mendeley, EndNote e JabRef"
+  path: https://ulisseslsreis.github.io/apresentacao_gerenciadores_referencias/
+  repo: https://github.com/ulisseslsreis/apresentacao_gerenciadores_referencias
+
+- title: "Bases Acadêmicas de Pesquisa"
+  subtitle: "Panorama e uso prático para a Área do Direito"
+  date: 2026-03-13
+  evento: "Minicurso · graduação e PPGD · UFERSA"
+  description: "Panorama das bases, indexadores e repositórios mais úteis para a pesquisa em Direito. Percorre CAPES, SciELO, Scopus, Web of Science, Redalyc e Google Acadêmico e termina com uma estratégia de busca."
+  image: imagens/apresentacoes/bases_dados_academicas.jpg
+  image-alt: "Slide com tabela comparando seis bases acadêmicas por tipo, acesso e melhor uso"
+  path: https://ulisseslsreis.github.io/apresentacao_bases_dados_academicas/
+  repo: https://github.com/ulisseslsreis/apresentacao_bases_dados_academicas

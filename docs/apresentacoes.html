@@ -28,6 +28,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <link href="./imagens/ulisses.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -54,6 +56,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lista-apresentacoes .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-date','listing-evento','listing-description','listing-image','listing-image-alt','listing-path','listing-repo',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-subtitle","listing-date","listing-evento","listing-description","listing-image","listing-image-alt","listing-repo"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lista-apresentacoes'] = new List('listing-lista-apresentacoes', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&amp;family=Spline+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap">
@@ -66,6 +97,35 @@ ul.task-list li input[type="checkbox"] {
 try { var t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="estilos.css">
 </head>
@@ -98,8 +158,74 @@ try { var t = localStorage.getItem('tema'); if (t) document.documentElement.data
 
 <section id="apresentações" class="level1 painel pagina">
 <h1>Apresentações</h1>
-<p>Em construção.</p>
+<p>Slides de minicursos e palestras, feitos em Quarto e abertos para consulta. Cada um tem o código no GitHub.</p>
+<div id="listing-lista-apresentacoes" class="quarto-listing quarto-listing-container-custom">
+<div class="cartoes">
+<article class="cartao" data-index="0" data-listing-date-sort="1777950000000">
+<a class="miniatura" href="https://ulisseslsreis.github.io/apresentacao_gen_ai_pesquisa_juridica/" tabindex="-1" aria-hidden="true"><img src="imagens/apresentacoes/gen_ai_pesquisa_juridica.jpg" alt="Slide com captura de tela do ChatGPT respondendo sobre a ADPF 54" loading="lazy"></a>
+<div class="cartao-texto">
+<p class="cartao-meta">
+05/05/2026 · Minicurso · graduação e PPGD · UFERSA
+</p>
+<h2 data-anchor-id="apresentações">
+<a href="https://ulisseslsreis.github.io/apresentacao_gen_ai_pesquisa_juridica/">IA Generativa na Pesquisa Jurídica</a>
+</h2>
+<p class="cartao-sub">
+Fundamentos, aplicações e limites metodológicos
+</p>
+<p>
+Como funcionam os modelos de linguagem e onde eles ajudam na pesquisa jurídica. Mostra aplicações na escrita, na revisão de literatura e na coleta de dados, com atenção a alucinação, viés e autoria.
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://ulisseslsreis.github.io/apresentacao_gen_ai_pesquisa_juridica/"><span aria-hidden="true">▶</span> Abrir slides</a> <a class="botao discreto" href="https://github.com/ulisseslsreis/apresentacao_gen_ai_pesquisa_juridica"><i class="bi bi-github" aria-hidden="true"></i> Código</a></p>
+</div>
+</div>
+</article>
+<article class="cartao" data-index="1" data-listing-date-sort="1777604400000">
+<a class="miniatura" href="https://ulisseslsreis.github.io/apresentacao_gerenciadores_referencias/" tabindex="-1" aria-hidden="true"><img src="imagens/apresentacoes/gerenciadores_referencias.jpg" alt="Slide com tabela comparando Zotero, Mendeley, EndNote e JabRef" loading="lazy"></a>
+<div class="cartao-texto">
+<p class="cartao-meta">
+01/05/2026 · Minicurso · graduação e PPGD · UFERSA
+</p>
+<h2>
+<a href="https://ulisseslsreis.github.io/apresentacao_gerenciadores_referencias/">Gerenciadores de Referências</a>
+</h2>
+<p class="cartao-sub">
+Poupando tempo útil para gastar com o que importa
+</p>
+<p>
+Por que usar um gerenciador de referências e como tirar proveito do Zotero. Cobre captura, organização da biblioteca, anotação, citação no Word com estilo ABNT e trabalho em grupo.
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://ulisseslsreis.github.io/apresentacao_gerenciadores_referencias/"><span aria-hidden="true">▶</span> Abrir slides</a> <a class="botao discreto" href="https://github.com/ulisseslsreis/apresentacao_gerenciadores_referencias"><i class="bi bi-github" aria-hidden="true"></i> Código</a></p>
+</div>
+</div>
+</article>
+<article class="cartao" data-index="2" data-listing-date-sort="1773370800000">
+<a class="miniatura" href="https://ulisseslsreis.github.io/apresentacao_bases_dados_academicas/" tabindex="-1" aria-hidden="true"><img src="imagens/apresentacoes/bases_dados_academicas.jpg" alt="Slide com tabela comparando seis bases acadêmicas por tipo, acesso e melhor uso" loading="lazy"></a>
+<div class="cartao-texto">
+<p class="cartao-meta">
+13/03/2026 · Minicurso · graduação e PPGD · UFERSA
+</p>
+<h2>
+<a href="https://ulisseslsreis.github.io/apresentacao_bases_dados_academicas/">Bases Acadêmicas de Pesquisa</a>
+</h2>
+<p class="cartao-sub">
+Panorama e uso prático para a Área do Direito
+</p>
+<p>
+Panorama das bases, indexadores e repositórios mais úteis para a pesquisa em Direito. Percorre CAPES, SciELO, Scopus, Web of Science, Redalyc e Google Acadêmico e termina com uma estratégia de busca.
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://ulisseslsreis.github.io/apresentacao_bases_dados_academicas/"><span aria-hidden="true">▶</span> Abrir slides</a> <a class="botao discreto" href="https://github.com/ulisseslsreis/apresentacao_bases_dados_academicas"><i class="bi bi-github" aria-hidden="true"></i> Código</a></p>
+</div>
+</div>
+</article>
+</div>
+<div class="listing-no-matching d-none">Sem itens correspondentes</div>
+</div>
 </section>
+
 
 
 
