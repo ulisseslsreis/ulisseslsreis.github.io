@@ -1,5 +1,11 @@
 ---
-title: "Ensino"
+pagetitle: "Ensino · Ulisses Reis"
 ---
 
+::: {.painel .pagina}
+
+# Ensino
+
 Em construção.
+
+:::

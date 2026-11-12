@@ -1,0 +1,53 @@
+<footer class="rodape">
+  <span>© 2026 Ulisses Reis · Feito com <a href="https://quarto.org">Quarto</a></span>
+  <span id="salvo"></span>
+</footer>
+<script>
+(function () {
+  // Menu: marca a página atual e permite navegar com as setas, como num RPG
+  var itens = Array.prototype.slice.call(document.querySelectorAll('#menu-lista a'));
+  var pagina = location.pathname.split('/').pop() || 'index.html';
+  var i = Math.max(0, itens.findIndex(function (a) { return a.getAttribute('href') === pagina; }));
+  itens[i].classList.add('ativo');
+  itens[i].setAttribute('aria-current', 'page');
+  function marca(n, foco) {
+    itens[i].classList.remove('ativo');
+    i = (n + itens.length) % itens.length;
+    itens[i].classList.add('ativo');
+    if (foco) itens[i].focus();
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest('input, textarea')) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); marca(i + 1, true); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); marca(i - 1, true); }
+  });
+  itens.forEach(function (a, n) {
+    a.addEventListener('mouseenter', function () { marca(n, false); });
+    a.addEventListener('focus', function () { if (i !== n) marca(n, false); });
+  });
+
+  // Troca de tema claro/escuro; a escolha fica salva no navegador
+  var raiz = document.documentElement, botao = document.getElementById('botao-tema');
+  function escuro() {
+    return raiz.dataset.theme ? raiz.dataset.theme === 'dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function rotula() {
+    var e = escuro();
+    botao.querySelector('i').className = 'bi ' + (e ? 'bi-sun' : 'bi-moon-stars');
+    botao.querySelector('span').textContent = e ? 'Tema claro' : 'Tema escuro';
+  }
+  botao.addEventListener('click', function () {
+    var novo = escuro() ? 'light' : 'dark';
+    raiz.dataset.theme = novo;
+    try { localStorage.setItem('tema', novo); } catch (e) {}
+    rotula();
+  });
+  rotula();
+
+  // "Último progresso salvo": data da última publicação, informada pelo servidor
+  var d = new Date(document.lastModified);
+  if (!isNaN(d)) document.getElementById('salvo').textContent =
+    'Último progresso salvo em ' + d.toLocaleDateString('pt-BR');
+})();
+</script>

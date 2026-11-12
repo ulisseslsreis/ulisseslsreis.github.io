@@ -10,7 +10,7 @@ O site reúne pesquisas, projetos de dados, apresentações e materiais de ensin
 
 ## Seções
 
-- **Página inicial**: apresentação, foto e links para perfis acadêmicos e redes sociais
+- **Início**: apresentação, foto e links para perfis acadêmicos e redes sociais
 - **Pesquisa**: artigos, livros e projetos de pesquisa (em construção)
 - **Projetos**: bases de dados, scripts e aplicativos, como o [Atlas Constitucional](https://github.com/ulisseslsreis/atlas_constitucional_2026) (em construção)
 - **Apresentações**: slides de palestras, cursos e eventos (em construção)
@@ -29,6 +29,12 @@ git push
 
 O GitHub Pages publica automaticamente o conteúdo da pasta `docs/` do ramo `main`.
 
+## Visual
+
+O visual se inspira nas telas de menu dos RPGs. A navegação fica num painel à esquerda, e cada item mostra um ícone quando o cursor passa sobre ele. São a seta (Início), espada (Pesquisa), livro (Projetos), pergaminho (Apresentações) e cajado (Ensino). As setas ↑ e ↓ do teclado também percorrem o menu.
+
+O site tem tema claro e tema escuro. Na primeira visita ele segue o tema do sistema de quem visita. O botão abaixo do menu troca o tema, e a escolha fica salva no navegador. As cores e o layout estão em `estilos.css`.
+
 ## Reprodução local
 
 **Requisito:** [Quarto](https://quarto.org/docs/get-started/) (≥ 1.4).
@@ -43,22 +49,24 @@ quarto preview
 
 ```
 site_pessoal/
-├── _quarto.yml         # Configuração do site: menu, rodapé e tema
-├── index.qmd           # Página inicial (template "solana")
-├── pesquisa.qmd        # Seção Pesquisa
-├── projetos.qmd        # Seção Projetos
-├── apresentacoes.qmd   # Seção Apresentações
-├── ensino.qmd          # Seção Ensino
-├── tema-claro.scss     # Cores do modo claro
-├── tema-escuro.scss    # Cores do modo escuro
-├── estilos.scss        # Tipografia e layout comuns aos dois modos
-├── imagens/            # Foto e demais imagens
-└── docs/               # Site renderizado, publicado pelo GitHub Pages
+├── _quarto.yml           # Configuração do site
+├── index.qmd             # Página inicial (ficha e apresentação)
+├── pesquisa.qmd          # Seção Pesquisa
+├── projetos.qmd          # Seção Projetos
+├── apresentacoes.qmd     # Seção Apresentações
+├── ensino.qmd            # Seção Ensino
+├── estilos.css           # Cores dos temas claro e escuro, tipografia e layout
+├── parciais/
+│   ├── cabecalho.html    # Fontes, ícones e aplicação do tema salvo
+│   ├── menu.html         # Painel de menu com os ícones de cada seção
+│   └── rodape.html       # Rodapé e scripts do menu e da troca de tema
+├── imagens/              # Foto e demais imagens
+└── docs/                 # Site renderizado, publicado pelo GitHub Pages
 ```
 
 ## Agradecimentos
 
-O visual do site foi inspirado no site de [Silvia Canelón](https://silviacanelon.com/), também construído com Quarto. Nenhum arquivo do site original foi copiado. Os ícones acadêmicos vêm do [Academicons](https://jpswalsh.github.io/academicons/) e as fontes ([Petrona](https://fonts.google.com/specimen/Petrona) e [Red Hat Text](https://fonts.google.com/specimen/Red+Hat+Text)) do Google Fonts.
+Os ícones acadêmicos vêm do [Academicons](https://jpswalsh.github.io/academicons/), os demais do [Bootstrap Icons](https://icons.getbootstrap.com/) e as fontes ([Spline Sans](https://fonts.google.com/specimen/Spline+Sans) e [Spline Sans Mono](https://fonts.google.com/specimen/Spline+Sans+Mono)) do Google Fonts. Os ícones do menu foram desenhados para este site.
 
 ## Licença
 

@@ -1,5 +1,11 @@
 ---
-title: "Projetos"
+pagetitle: "Projetos · Ulisses Reis"
 ---
 
+::: {.painel .pagina}
+
+# Projetos
+
 Em construção.
+
+:::

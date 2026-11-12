@@ -1,5 +1,11 @@
 ---
-title: "Apresentações"
+pagetitle: "Apresentações · Ulisses Reis"
 ---
 
+::: {.painel .pagina}
+
+# Apresentações
+
 Em construção.
+
+:::

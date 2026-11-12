@@ -1,60 +1,52 @@
 ---
-title: "Ulisses Levy Silvério dos Reis"
-subtitle: "Professor da Universidade Federal Rural do Semi-Árido (UFERSA)"
+pagetitle: "Ulisses Reis"
+description: "Professor da Universidade Federal Rural do Semi-Árido (UFERSA). Pesquisa empírica em direito constitucional, com foco no Supremo Tribunal Federal."
 image: imagens/ulisses.png
-image-alt: "Foto de Ulisses Levy Silvério dos Reis, de terno azul-marinho e gravata verde"
-page-layout: full
-about:
-  template: solana
-  id: inicio
-  image-shape: round
-  image-width: 22em
-  links:
-    - text: '<i class="bi bi-envelope"></i>'
-      href: "mailto:ulisseslreis@gmail.com"
-      aria-label: E-mail
-    - text: '<i class="ai ai-lattes"></i>'
-      href: https://lattes.cnpq.br/5041818002534490
-      aria-label: Lattes
-    - text: '<i class="ai ai-orcid"></i>'
-      href: https://orcid.org/0000-0003-1476-416X
-      aria-label: ORCID
-    - text: '<i class="ai ai-google-scholar"></i>'
-      href: https://scholar.google.com/citations?user=6zJErcYAAAAJ&hl=pt-BR
-      aria-label: Google Scholar
-    - text: '<i class="ai ai-researchgate"></i>'
-      href: https://www.researchgate.net/profile/Ulisses-Reis-2
-      aria-label: ResearchGate
-    - text: '<i class="ai ai-academia"></i>'
-      href: https://ufersa.academia.edu/UlissesReis
-      aria-label: Academia.edu
-    - icon: github
-      href: https://github.com/ulisseslsreis
-      aria-label: GitHub
-    - icon: linkedin
-      href: https://www.linkedin.com/in/ulisses-reis-797919247/
-      aria-label: LinkedIn
-    - icon: substack
-      href: https://substack.com/@ulissesreis
-      aria-label: Substack
-    - icon: instagram
-      href: https://www.instagram.com/ulisseslsreis/
-      aria-label: Instagram
-    - icon: twitter-x
-      href: https://x.com/ulisseslsreis
-      aria-label: X
-    - icon: threads
-      href: https://www.threads.com/@ulisseslsreis
-      aria-label: Threads
-    - icon: bluesky
-      href: https://bsky.app/profile/ulissesreis.bsky.social
-      aria-label: Bluesky
 ---
 
-::: {#inicio}
+::: {.painel .ficha}
+
+![](imagens/ulisses.png){fig-alt="Foto de Ulisses Levy Silvério dos Reis, de terno azul-marinho e gravata verde"}
+
+:::: {}
+
+# Ulisses Levy Silvério dos Reis
+
+```{=html}
+<dl class="atributos">
+  <dt>Classe</dt><dd>Professor de Direito</dd>
+  <dt>Base</dt><dd>UFERSA · Mossoró/RN</dd>
+  <dt>Foco</dt><dd>STF · métodos empíricos · text as data</dd>
+</dl>
+```
+
+::::
+
+:::
+
+::: {.painel .dialogo}
 
 Sou professor da UFERSA, onde leciono na graduação em Direito e no Programa de Pós-Graduação em Direito. Pesquiso direito constitucional com métodos empíricos, para entender como Direito e Política se relacionam. Uso métodos descritivos e inferenciais, com abordagens de *text as data*. O meu foco principal de investigação é o Supremo Tribunal Federal.
 
 Aqui reúno minhas pesquisas, projetos de dados, apresentações e materiais de ensino.
+
+```{=html}
+<div class="links">
+  <a href="mailto:ulisseslreis@gmail.com" aria-label="E-mail" title="E-mail"><i class="bi bi-envelope"></i></a>
+  <a href="https://lattes.cnpq.br/5041818002534490" aria-label="Lattes" title="Lattes"><i class="ai ai-lattes"></i></a>
+  <a href="https://orcid.org/0000-0003-1476-416X" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid"></i></a>
+  <a href="https://scholar.google.com/citations?user=6zJErcYAAAAJ&hl=pt-BR" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+  <a href="https://www.researchgate.net/profile/Ulisses-Reis-2" aria-label="ResearchGate" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+  <a href="https://ufersa.academia.edu/UlissesReis" aria-label="Academia.edu" title="Academia.edu"><i class="ai ai-academia"></i></a>
+  <a href="https://github.com/ulisseslsreis" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+  <a href="https://www.linkedin.com/in/ulisses-reis-797919247/" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  <a href="https://substack.com/@ulissesreis" aria-label="Substack" title="Substack"><i class="bi bi-substack"></i></a>
+  <a href="https://www.instagram.com/ulisseslsreis/" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+  <a href="https://x.com/ulisseslsreis" aria-label="X" title="X"><i class="bi bi-twitter-x"></i></a>
+  <a href="https://www.threads.com/@ulisseslsreis" aria-label="Threads" title="Threads"><i class="bi bi-threads"></i></a>
+  <a href="https://bsky.app/profile/ulissesreis.bsky.social" aria-label="Bluesky" title="Bluesky"><i class="bi bi-bluesky"></i></a>
+</div>
+<span class="seta" aria-hidden="true">▶</span>
+```
 
 :::

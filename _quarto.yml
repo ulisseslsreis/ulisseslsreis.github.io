@@ -9,28 +9,17 @@ website:
   site-url: https://ulisseslsreis.github.io
   description: "Site pessoal de Ulisses Reis, professor de Direito da UFERSA. Pesquisa empírica em direito constitucional, projetos de dados, apresentações e ensino."
   favicon: imagens/ulisses.png
-  page-navigation: true
-  back-to-top-navigation: true
-  navbar:
-    right:
-      - href: pesquisa.qmd
-        text: Pesquisa
-      - href: projetos.qmd
-        text: Projetos
-      - href: apresentacoes.qmd
-        text: Apresentações
-      - href: ensino.qmd
-        text: Ensino
-  page-footer:
-    left: "© 2026 Ulisses Reis ∙ Feito com [Quarto](https://quarto.org)"
+  search: false
 
 format:
   html:
-    theme:
-      light: [cosmo, tema-claro.scss, estilos.scss]
-      dark: [cosmo, tema-escuro.scss, estilos.scss]
-    # Academicons: ícones de Lattes, ORCID, Google Scholar, ResearchGate e Academia.edu
-    include-in-header:
-      text: |
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+    theme: cosmo
+    css: estilos.css
+    page-layout: custom
     toc: false
+    # Fontes, ícones e o script que aplica o tema salvo antes de desenhar a página
+    include-in-header: parciais/cabecalho.html
+    # Painel de menu à esquerda (comum a todas as páginas)
+    include-before-body: parciais/menu.html
+    # Rodapé e scripts do menu e da troca de tema
+    include-after-body: parciais/rodape.html

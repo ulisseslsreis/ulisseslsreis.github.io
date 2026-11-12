@@ -1,5 +1,11 @@
 ---
-title: "Pesquisa"
+pagetitle: "Pesquisa · Ulisses Reis"
 ---
 
+::: {.painel .pagina}
+
+# Pesquisa
+
 Em construção.
+
+:::
