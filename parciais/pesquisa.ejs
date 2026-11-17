@@ -1,0 +1,21 @@
+<% const grupos = [["artigo", "Artigos em periódicos"], ["anais", "Trabalhos em anais de eventos"]]; %>
+<% for (const grupo of grupos) { const lista = items.filter(i => i.tipo === grupo[0]); if (lista.length === 0) continue; %>
+<section class="grupo-pub">
+<h2><%= grupo[1] %> <span class="contagem"><%= lista.length %></span></h2>
+<ol class="publicacoes">
+<% for (const item of lista) { %>
+<li class="publicacao" <%= metadataAttrs(item) %>>
+<p class="pub-meta"><%= item.ano %> · <%= item.veiculo %></p>
+<h3><a href="<%- item.doi ? 'https://doi.org/' + item.doi : item.pagina %>"><%= item.title %></a></h3>
+<p class="pub-autores"><% item.autores.forEach((a, k) => { %><% if (k > 0) { %><%= k === item.autores.length - 1 ? ' e ' : ', ' %><% } %><% if (a.startsWith("Ulisses")) { %><strong><%= a %></strong><% } else { %><%= a %><% } %><% }) %></p>
+<p class="pub-detalhe"><%= item.detalhe.replace(/^v\. /, "v.\u00A0") %></p>
+<div class="cartao-acoes">
+<% if (item.doi) { %><a class="botao" href="https://doi.org/<%- item.doi %>">DOI</a><% } %>
+<% if (item.pagina) { %><a class="botao discreto" href="<%- item.pagina %>"><%= item.tipo === 'anais' ? 'Página nos anais' : 'Página da revista' %></a><% } %>
+<% if (item.pdf) { %><a class="botao discreto" href="<%- item.pdf %>"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF</a><% } %>
+</div>
+</li>
+<% } %>
+</ol>
+</section>
+<% } %>

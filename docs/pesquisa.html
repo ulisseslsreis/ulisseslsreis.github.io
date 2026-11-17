@@ -28,6 +28,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <link href="./imagens/ulisses.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -54,6 +56,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lista-pesquisa .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-autores','listing-tipo','listing-date','listing-ano','listing-veiculo','listing-detalhe','listing-doi','listing-pagina','listing-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-autores","listing-tipo","listing-date","listing-ano","listing-veiculo","listing-detalhe","listing-pagina","listing-pdf","listing-doi"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lista-pesquisa'] = new List('listing-lista-pesquisa', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600&amp;family=Spline+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap">
@@ -66,6 +97,35 @@ ul.task-list li input[type="checkbox"] {
 try { var t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="estilos.css">
 </head>
@@ -98,8 +158,196 @@ try { var t = localStorage.getItem('tema'); if (t) document.documentElement.data
 
 <section id="pesquisa" class="level1 painel pagina">
 <h1>Pesquisa</h1>
-<p>Em construção.</p>
+<p>Artigos e trabalhos em anais, do mais recente ao mais antigo. Os links levam à versão oficial de cada publicação.</p>
+<div id="listing-lista-pesquisa" class="quarto-listing quarto-listing-container-custom">
+<section class="grupo-pub">
+<h2 data-anchor-id="pesquisa">
+Artigos em periódicos <span class="contagem">8</span>
+</h2>
+<ol class="publicacoes">
+<li class="publicacao" data-index="0" data-listing-date-sort="1746673200000">
+<p class="pub-meta">
+2025 · Revista Eletrônica Direito e Política
+</p>
+<h3>
+<a href="https://doi.org/10.14210/rdp.v20n1.p177-201">A nacionalidade importa? Um olhar para a Corte Interamericana de Direitos Humanos</a>
+</h3>
+<p class="pub-autores">
+Paulo César Rebouças Torquato Filho e <strong>Ulisses Levy Silvério dos Reis</strong>
+</p>
+<p class="pub-detalhe">
+v.&nbsp;20, n.&nbsp;1, p.&nbsp;177-201
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.14210/rdp.v20n1.p177-201">DOI</a> <a class="botao discreto" href="https://periodicos.univali.br/index.php/rdp/article/view/20025">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="1" data-listing-date-sort="1736305200000">
+<p class="pub-meta">
+2025 · Revista Brasileira de Sociologia do Direito
+</p>
+<h3>
+<a href="https://doi.org/10.21910/rbsd.v12i1.814">Quando a parte não representa o todo: mecanismos oficiais de consulta (“pesquisa”) jurisprudencial e os riscos de seu uso na pesquisa empírica quantitativa</a>
+</h3>
+<p class="pub-autores">
+<strong>Ulisses Reis</strong> e José Mário Wanderley Gomes Neto
+</p>
+<p class="pub-detalhe">
+v.&nbsp;12, n.&nbsp;1, p.&nbsp;9-33
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.21910/rbsd.v12i1.814">DOI</a> <a class="botao discreto" href="https://revista.abrasd.com.br/index.php/rbsd/article/view/814">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="2" data-listing-date-sort="1734577200000">
+<p class="pub-meta">
+2024 · Revista da AGU
+</p>
+<h3>
+<a href="https://doi.org/10.25109/2525-328X.v.23.n.4.2024.3523">O plenário virtual do Tribunal Superior Eleitoral no período 2019-2023: dinâmica e utilização da ferramenta da implementação à estabilização</a>
+</h3>
+<p class="pub-autores">
+<strong>Ulisses Levy Silvério dos Reis</strong> e Maria Teodora Rocha Maia do Amaral
+</p>
+<p class="pub-detalhe">
+v.&nbsp;23, n.&nbsp;4, p.&nbsp;199-224
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.25109/2525-328X.v.23.n.4.2024.3523">DOI</a> <a class="botao discreto" href="https://revistaagu.agu.gov.br/index.php/AGU/article/view/3523">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="3" data-listing-date-sort="1714791600000">
+<p class="pub-meta">
+2024 · Revista Estudos Institucionais
+</p>
+<h3>
+<a href="https://doi.org/10.21783/rei.v10i2.805">A era digital do controle de constitucionalidade na pandemia da Covid-19: uma análise comparada dos julgamentos no plenário virtual e nas sessões síncronas do Supremo Tribunal Federal (2019-2022)</a>
+</h3>
+<p class="pub-autores">
+<strong>Ulisses Levy Silvério dos Reis</strong> e Lizziane Souza Queiroz Franco de Oliveira
+</p>
+<p class="pub-detalhe">
+v.&nbsp;10, n.&nbsp;2, p.&nbsp;567-598
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.21783/rei.v10i2.805">DOI</a> <a class="botao discreto" href="https://estudosinstitucionais.com/REI/article/view/805">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="4" data-listing-date-sort="1709866800000">
+<p class="pub-meta">
+2024 · REJUR - Revista Jurídica da UFERSA
+</p>
+<h3>
+<a href="https://doi.org/10.21708/issn2526-9488.v8.n15.p189-209.2024">A interferência do orçamento secreto na execução de políticas públicas do Ministério do Desenvolvimento Regional (2020-2022)</a>
+</h3>
+<p class="pub-autores">
+Brena Christina Fernandes dos Santos e <strong>Ulisses Levy Silvério dos Reis</strong>
+</p>
+<p class="pub-detalhe">
+v.&nbsp;8, n.&nbsp;15, p.&nbsp;189-209
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.21708/issn2526-9488.v8.n15.p189-209.2024">DOI</a> <a class="botao discreto" href="https://periodicos.ufersa.edu.br/rejur/article/view/12111">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="5" data-listing-date-sort="1685934000000">
+<p class="pub-meta">
+2023 · Revista Juridicidade Constitucional e Democracia
+</p>
+<h3>
+<a href="https://doi.org/10.59776/2965-3290.2023.5042">Reflexões sobre autonomia universitária ou a atuação do Poder Judiciário como tribunal da história</a>
+</h3>
+<p class="pub-autores">
+Rafael Lamera Giesta Cabral e <strong>Ulisses Levy Silvério dos Reis</strong>
+</p>
+<p class="pub-detalhe">
+v.&nbsp;1, n.&nbsp;1, p.&nbsp;1-23
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.59776/2965-3290.2023.5042">DOI</a> <a class="botao discreto" href="https://periodicos.apps.uern.br/index.php/jcd/article/view/5042">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="6" data-listing-date-sort="1673838000000">
+<p class="pub-meta">
+2023 · Jus Cogens
+</p>
+<h3>
+<a href="https://doi.org/10.1007/s42439-023-00072-1">Courts and COVID-19: an assessment of countries dealing with democratic erosion</a>
+</h3>
+<p class="pub-autores">
+Emilio Peluso Neder Meyer, <strong>Ulisses Levy Silvério dos Reis</strong> e Bruno Braga de Castro
+</p>
+<p class="pub-detalhe">
+v.&nbsp;5, n.&nbsp;1, p.&nbsp;85-110
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.1007/s42439-023-00072-1">DOI</a> <a class="botao discreto" href="https://link.springer.com/article/10.1007/s42439-023-00072-1">Página da revista</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="7" data-listing-date-sort="1646103600000">
+<p class="pub-meta">
+2021 · Revista Brasileira de Políticas Públicas
+</p>
+<h3>
+<a href="https://doi.org/10.5102/rbpp.v11i3.7418">“Ministrocracia” e decisões individuais contraditórias no Supremo Tribunal Federal</a>
+</h3>
+<p class="pub-autores">
+<strong>Ulisses Levy Silvério dos Reis</strong> e Emilio Peluso Neder Meyer
+</p>
+<p class="pub-detalhe">
+v.&nbsp;11, n.&nbsp;3, p.&nbsp;401-425
+</p>
+<div class="cartao-acoes">
+<p><a class="botao" href="https://doi.org/10.5102/rbpp.v11i3.7418">DOI</a> <a class="botao discreto" href="https://publicacoesacademicas.uniceub.br/RBPP/pt_BR/article/view/7418">Página da revista</a></p>
+</div>
+</li>
+</ol>
 </section>
+<section class="grupo-pub">
+<h2>
+Trabalhos em anais de eventos <span class="contagem">2</span>
+</h2>
+<ol class="publicacoes">
+<li class="publicacao" data-index="8" data-listing-date-sort="1794193200000">
+<p class="pub-meta">
+2026 · Anais do XV Encontro Nacional de Pesquisa Empírica em Direito
+</p>
+<h3>
+<a href="https://www.even3.com.br/anais/epedbelem-686626/1557804-entre-urnas-e-instituicoes--uma-analise-quantitativa-acerca-da-relacao-entre-os-modelos-de-administracao-eleitor/">Entre urnas e instituições: uma análise quantitativa acerca da relação entre os modelos de administração eleitoral e o índice de eleições limpas na América do Sul</a>
+</h3>
+<p class="pub-autores">
+Jonathan Fernandes da Silva Mota e <strong>Ulisses Levy Silvério dos Reis</strong>
+</p>
+<p class="pub-detalhe">
+Belém, UFPA · resumo expandido · GT45 Métodos quantitativos para o direito
+</p>
+<div class="cartao-acoes">
+<p><a class="botao discreto" href="https://www.even3.com.br/anais/epedbelem-686626/1557804-entre-urnas-e-instituicoes--uma-analise-quantitativa-acerca-da-relacao-entre-os-modelos-de-administracao-eleitor/">Página nos anais</a> <a class="botao discreto" href="https://static.even3.com/anais/Trabalho_1557804.pdf"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF</a></p>
+</div>
+</li>
+<li class="publicacao" data-index="9" data-listing-date-sort="1794193200000">
+<p class="pub-meta">
+2026 · Anais do XV Encontro Nacional de Pesquisa Empírica em Direito
+</p>
+<h3>
+<a href="https://www.even3.com.br/anais/epedbelem-686626/1559221-how-rigid-is-too-rigid-clausulas-petreas-e-maiorias-qualificadas-em-perspectiva-comparada/">How rigid is too rigid? Cláusulas pétreas e maiorias qualificadas em perspectiva comparada</a>
+</h3>
+<p class="pub-autores">
+Adailson Pinho de Araújo, Paulo César Rebouças Torquato Filho, <strong>Ulisses Levy Silvério dos Reis</strong> e José Mário Wanderley Gomes Neto
+</p>
+<p class="pub-detalhe">
+Belém, UFPA · resumo expandido · GT45 Métodos quantitativos para o direito
+</p>
+<div class="cartao-acoes">
+<p><a class="botao discreto" href="https://www.even3.com.br/anais/epedbelem-686626/1559221-how-rigid-is-too-rigid-clausulas-petreas-e-maiorias-qualificadas-em-perspectiva-comparada/">Página nos anais</a> <a class="botao discreto" href="https://static.even3.com/anais/Trabalho_1559221.pdf"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> PDF</a></p>
+</div>
+</li>
+</ol>
+</section>
+<div class="listing-no-matching d-none">Sem itens correspondentes</div>
+</div>
+</section>
+
 
 
 

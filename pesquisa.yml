@@ -1,0 +1,105 @@
+# Publicações exibidas na aba Pesquisa.
+# Para incluir uma nova, copie um bloco e ajuste os campos.
+# tipo: artigo (periódico) ou anais (trabalho em anais de evento).
+# date: data de publicação, só para ordenar. ano: ano exibido, o mesmo da citação.
+# Links: doi (sem https://doi.org/), pagina (página oficial) e pdf (opcional, só se for público na fonte).
+
+- title: "Entre urnas e instituições: uma análise quantitativa acerca da relação entre os modelos de administração eleitoral e o índice de eleições limpas na América do Sul"
+  autores: ["Jonathan Fernandes da Silva Mota", "Ulisses Levy Silvério dos Reis"]
+  tipo: anais
+  date: 2026-11-09
+  ano: 2026
+  veiculo: "Anais do XV Encontro Nacional de Pesquisa Empírica em Direito"
+  detalhe: "Belém, UFPA · resumo expandido · GT45 Métodos quantitativos para o direito"
+  pagina: https://www.even3.com.br/anais/epedbelem-686626/1557804-entre-urnas-e-instituicoes--uma-analise-quantitativa-acerca-da-relacao-entre-os-modelos-de-administracao-eleitor/
+  pdf: https://static.even3.com/anais/Trabalho_1557804.pdf
+
+- title: "How rigid is too rigid? Cláusulas pétreas e maiorias qualificadas em perspectiva comparada"
+  autores: ["Adailson Pinho de Araújo", "Paulo César Rebouças Torquato Filho", "Ulisses Levy Silvério dos Reis", "José Mário Wanderley Gomes Neto"]
+  tipo: anais
+  date: 2026-11-09
+  ano: 2026
+  veiculo: "Anais do XV Encontro Nacional de Pesquisa Empírica em Direito"
+  detalhe: "Belém, UFPA · resumo expandido · GT45 Métodos quantitativos para o direito"
+  pagina: https://www.even3.com.br/anais/epedbelem-686626/1559221-how-rigid-is-too-rigid-clausulas-petreas-e-maiorias-qualificadas-em-perspectiva-comparada/
+  pdf: https://static.even3.com/anais/Trabalho_1559221.pdf
+
+- title: "A nacionalidade importa? Um olhar para a Corte Interamericana de Direitos Humanos"
+  autores: ["Paulo César Rebouças Torquato Filho", "Ulisses Levy Silvério dos Reis"]
+  tipo: artigo
+  date: 2025-05-08
+  ano: 2025
+  veiculo: "Revista Eletrônica Direito e Política"
+  detalhe: "v. 20, n. 1, p. 177-201"
+  doi: 10.14210/rdp.v20n1.p177-201
+  pagina: https://periodicos.univali.br/index.php/rdp/article/view/20025
+
+- title: "Quando a parte não representa o todo: mecanismos oficiais de consulta (“pesquisa”) jurisprudencial e os riscos de seu uso na pesquisa empírica quantitativa"
+  autores: ["Ulisses Reis", "José Mário Wanderley Gomes Neto"]
+  tipo: artigo
+  date: 2025-01-08
+  ano: 2025
+  veiculo: "Revista Brasileira de Sociologia do Direito"
+  detalhe: "v. 12, n. 1, p. 9-33"
+  doi: 10.21910/rbsd.v12i1.814
+  pagina: https://revista.abrasd.com.br/index.php/rbsd/article/view/814
+
+- title: "O plenário virtual do Tribunal Superior Eleitoral no período 2019-2023: dinâmica e utilização da ferramenta da implementação à estabilização"
+  autores: ["Ulisses Levy Silvério dos Reis", "Maria Teodora Rocha Maia do Amaral"]
+  tipo: artigo
+  date: 2024-12-19
+  ano: 2024
+  veiculo: "Revista da AGU"
+  detalhe: "v. 23, n. 4, p. 199-224"
+  doi: 10.25109/2525-328X.v.23.n.4.2024.3523
+  pagina: https://revistaagu.agu.gov.br/index.php/AGU/article/view/3523
+
+- title: "A era digital do controle de constitucionalidade na pandemia da Covid-19: uma análise comparada dos julgamentos no plenário virtual e nas sessões síncronas do Supremo Tribunal Federal (2019-2022)"
+  autores: ["Ulisses Levy Silvério dos Reis", "Lizziane Souza Queiroz Franco de Oliveira"]
+  tipo: artigo
+  date: 2024-05-04
+  ano: 2024
+  veiculo: "Revista Estudos Institucionais"
+  detalhe: "v. 10, n. 2, p. 567-598"
+  doi: 10.21783/rei.v10i2.805
+  pagina: https://estudosinstitucionais.com/REI/article/view/805
+
+- title: "A interferência do orçamento secreto na execução de políticas públicas do Ministério do Desenvolvimento Regional (2020-2022)"
+  autores: ["Brena Christina Fernandes dos Santos", "Ulisses Levy Silvério dos Reis"]
+  tipo: artigo
+  date: 2024-03-08
+  ano: 2024
+  veiculo: "REJUR - Revista Jurídica da UFERSA"
+  detalhe: "v. 8, n. 15, p. 189-209"
+  doi: 10.21708/issn2526-9488.v8.n15.p189-209.2024
+  pagina: https://periodicos.ufersa.edu.br/rejur/article/view/12111
+
+- title: "Reflexões sobre autonomia universitária ou a atuação do Poder Judiciário como tribunal da história"
+  autores: ["Rafael Lamera Giesta Cabral", "Ulisses Levy Silvério dos Reis"]
+  tipo: artigo
+  date: 2023-06-05
+  ano: 2023
+  veiculo: "Revista Juridicidade Constitucional e Democracia"
+  detalhe: "v. 1, n. 1, p. 1-23"
+  doi: 10.59776/2965-3290.2023.5042
+  pagina: https://periodicos.apps.uern.br/index.php/jcd/article/view/5042
+
+- title: "Courts and COVID-19: an assessment of countries dealing with democratic erosion"
+  autores: ["Emilio Peluso Neder Meyer", "Ulisses Levy Silvério dos Reis", "Bruno Braga de Castro"]
+  tipo: artigo
+  date: 2023-01-16
+  ano: 2023
+  veiculo: "Jus Cogens"
+  detalhe: "v. 5, n. 1, p. 85-110"
+  doi: 10.1007/s42439-023-00072-1
+  pagina: https://link.springer.com/article/10.1007/s42439-023-00072-1
+
+- title: "\"Ministrocracia\" e decisões individuais contraditórias no Supremo Tribunal Federal"
+  autores: ["Ulisses Levy Silvério dos Reis", "Emilio Peluso Neder Meyer"]
+  tipo: artigo
+  date: 2022-03-01
+  ano: 2021
+  veiculo: "Revista Brasileira de Políticas Públicas"
+  detalhe: "v. 11, n. 3, p. 401-425"
+  doi: 10.5102/rbpp.v11i3.7418
+  pagina: https://publicacoesacademicas.uniceub.br/RBPP/pt_BR/article/view/7418

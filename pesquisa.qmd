@@ -1,11 +1,20 @@
 ---
 pagetitle: "Pesquisa · Ulisses Reis"
+listing:
+  id: lista-pesquisa
+  contents: pesquisa.yml
+  template: parciais/pesquisa.ejs
+  sort: "date desc"
+  fields: [title, autores, tipo, date, ano, veiculo, detalhe, doi, pagina, pdf]
 ---
 
-::: {.painel .pagina}
+::::: {.painel .pagina}
 
 # Pesquisa
 
-Em construção.
+Artigos e trabalhos em anais, do mais recente ao mais antigo. Os links levam à versão oficial de cada publicação.
 
+::: {#lista-pesquisa}
 :::
+
+:::::

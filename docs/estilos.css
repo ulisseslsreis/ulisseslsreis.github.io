@@ -230,3 +230,22 @@ a:hover { color: var(--acento); }
 
 /* Rótulos em fonte monoespaçada mantêm o espaço normal */
 .menu, .tema, .atributos, .rodape, .cartao-meta, .botao { word-spacing: normal; }
+
+/* ---- Aba Pesquisa: publicações lidas de pesquisa.yml, agrupadas por tipo ---- */
+.grupo-pub { margin-top: 1.6rem; }
+.grupo-pub h2 {
+  font: 500 .8rem "Spline Sans Mono", monospace; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--acento); border: 0; border-bottom: 1px solid var(--borda); padding: 0 0 .4rem; margin: 0 0 .4rem;
+}
+.grupo-pub .contagem { color: var(--suave); margin-left: .4rem; }
+.publicacoes { list-style: none; padding: 0; margin: 0; }
+.publicacao { padding: 1rem .2rem; border-bottom: 1px dashed var(--borda); }
+.publicacao:last-child { border-bottom: 0; }
+.publicacao p { margin: 0 0 .35rem; }
+.pub-meta { font: 400 .72rem "Spline Sans Mono", monospace; color: var(--suave); word-spacing: normal; }
+.publicacao h3 { font: 500 1.05rem/1.35 "Spline Sans", sans-serif; margin: 0 0 .3rem; border: 0; padding: 0; }
+.publicacao h3 a { text-decoration: none; color: var(--texto); }
+.publicacao h3 a:hover { color: var(--acento); }
+.pub-autores strong { font-weight: 600; }
+.pub-detalhe { font-size: .9rem; color: var(--suave); }
+.publicacao .cartao-acoes { margin-top: .6rem; }
